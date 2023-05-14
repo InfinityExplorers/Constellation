@@ -1,13 +1,13 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "constellation",
+  "name": "Constellation",
+  "description": "Code mod for The Orion Project modpack",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["CleanroomMC"],
+  "authorList": ["StarL0stGaming", "InfinityExplorers"],
   "credits": "Authors of this project",
   "logoFile": "",
   "screenshots": [],
