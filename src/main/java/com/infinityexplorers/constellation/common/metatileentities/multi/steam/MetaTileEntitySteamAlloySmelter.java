@@ -1,11 +1,13 @@
 package com.infinityexplorers.constellation.common.metatileentities.multi.primitive;
 
+import com.infinityexplorers.constellation.common.recipes.OrionRecipeMaps;
 import gregtech.api.gui.ModularUI;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity;
 import gregtech.api.metatileentity.multiblock.IMultiblockPart;
 import gregtech.api.metatileentity.multiblock.MultiblockAbility;
 import gregtech.api.metatileentity.multiblock.MultiblockControllerBase;
+import gregtech.api.metatileentity.multiblock.RecipeMapMultiblockController;
 import gregtech.api.pattern.BlockPattern;
 import gregtech.api.pattern.FactoryBlockPattern;
 import gregtech.client.renderer.ICubeRenderer;
@@ -18,10 +20,10 @@ import net.minecraft.util.ResourceLocation;
 
 import javax.annotation.Nonnull;
 
-public class MetaTileEntityPrimitveAlloySmelter extends MultiblockControllerBase {
+public class MetaTileEntityPrimitveAlloySmelter extends RecipeMapMultiblockController {
 
     public MetaTileEntityPrimitveAlloySmelter(ResourceLocation metaTileEntityId) {
-        super(metaTileEntityId);
+        super(metaTileEntityId, OrionRecipeMaps.PRIMITIVE_ALLOY_SMELTER);
     }
 
     @Override
