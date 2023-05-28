@@ -7,7 +7,7 @@ import gregtech.api.recipes.builders.SimpleRecipeBuilder;
 
 public class OrionRecipeMaps {
 
-    public static final RecipeMap<PrimitiveRecipeBuilder> PRIMITIVE_ALLOY_SMELTER = new RecipeMap<>("primitive_alloy_smelter", 2, 1, 0, 0, new PrimitiveRecipeBuilder(), false);
+    public static final RecipeMap<SimpleRecipeBuilder> STEAM_ALLOY_SMELTER = new RecipeMap<>("steam_alloy_smelter", 2, 1, 0, 0, new SimpleRecipeBuilder(), false);
 
 
 

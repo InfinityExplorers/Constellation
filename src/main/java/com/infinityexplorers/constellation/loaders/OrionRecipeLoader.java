@@ -7,6 +7,7 @@ import static gregtech.api.recipes.RecipeMaps.*;
 import static gregtech.api.unification.material.Materials.*;
 
 import static gregtech.api.unification.ore.OrePrefix.*;
+import static gregtech.api.GTValues.*;
 
 
 public class OrionRecipeLoader {
@@ -20,10 +21,11 @@ public class OrionRecipeLoader {
                 .output(dust, Aluminium)
                 .buildAndRegister();
 
-        OrionRecipeMaps.PRIMITIVE_ALLOY_SMELTER.recipeBuilder()
+        OrionRecipeMaps.STEAM_ALLOY_SMELTER.recipeBuilder()
+                .EUt(VA[0])
                 .duration(20)
-                .input(dust, Copper, 3)
                 .input(dust, Tin, 1)
+                .input(dust, Copper, 3)
                 .output(ingot, Bronze, 4)
                 .buildAndRegister();
 

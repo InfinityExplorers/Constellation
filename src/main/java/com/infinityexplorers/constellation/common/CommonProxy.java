@@ -22,8 +22,8 @@ public class CommonProxy {
 
     }
 
-    @SubscribeEvent()
-    public void registerRecipes(RegistryEvent.Register<IRecipe> event) {
+    @SubscribeEvent
+    public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
 
         OrionRecipeLoader.init();
     }

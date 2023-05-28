@@ -1,15 +1,16 @@
-package com.infinityexplorers.constellation.common.metatileentities.multi.primitive;
+package com.infinityexplorers.constellation.common.metatileentities.multi.steam;
 
 import com.infinityexplorers.constellation.common.recipes.OrionRecipeMaps;
+import gregtech.api.capability.impl.SteamMultiWorkable;
+import gregtech.api.gui.GuiTextures;
 import gregtech.api.gui.ModularUI;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity;
 import gregtech.api.metatileentity.multiblock.IMultiblockPart;
-import gregtech.api.metatileentity.multiblock.MultiblockAbility;
-import gregtech.api.metatileentity.multiblock.MultiblockControllerBase;
-import gregtech.api.metatileentity.multiblock.RecipeMapMultiblockController;
+import gregtech.api.metatileentity.multiblock.RecipeMapSteamMultiblockController;
 import gregtech.api.pattern.BlockPattern;
 import gregtech.api.pattern.FactoryBlockPattern;
+import gregtech.api.pattern.PatternMatchContext;
 import gregtech.client.renderer.ICubeRenderer;
 import gregtech.client.renderer.texture.Textures;
 import gregtech.common.blocks.BlockMetalCasing;
@@ -20,10 +21,14 @@ import net.minecraft.util.ResourceLocation;
 
 import javax.annotation.Nonnull;
 
-public class MetaTileEntityPrimitveAlloySmelter extends RecipeMapMultiblockController {
+public class MetaTileEntitySteamAlloySmelter extends RecipeMapSteamMultiblockController {
 
-    public MetaTileEntityPrimitveAlloySmelter(ResourceLocation metaTileEntityId) {
-        super(metaTileEntityId, OrionRecipeMaps.PRIMITIVE_ALLOY_SMELTER);
+    private static final int MAX_PARALLELS = 8;
+
+    public MetaTileEntitySteamAlloySmelter(ResourceLocation metaTileEntityId) {
+        super(metaTileEntityId, OrionRecipeMaps.STEAM_ALLOY_SMELTER, CONVERSION_RATE);
+        this.recipeMapWorkable = new SteamMultiWorkable(this, CONVERSION_RATE);
+        this.recipeMapWorkable.setParallelLimit(MAX_PARALLELS);
     }
 
     @Override
@@ -39,7 +44,7 @@ public class MetaTileEntityPrimitveAlloySmelter extends RecipeMapMultiblockContr
                 .aisle("XXX", "X#X", "XXX")
                 .aisle("XXX", "XSX", "XXX")
                 .where('S', selfPredicate())
-                .where('X', states(new IBlockState[] {MetaBlocks.METAL_CASING.getState(BlockMetalCasing.MetalCasingType.BRONZE_BRICKS)}).or(abilities(MultiblockAbility.EXPORT_ITEMS)).or(abilities(MultiblockAbility.IMPORT_ITEMS)))
+                .where('X', states(new IBlockState[] {MetaBlocks.METAL_CASING.getState(BlockMetalCasing.MetalCasingType.BRONZE_BRICKS)}).or(autoAbilities(true, false, true, true, false)))
                 .where('#', air())
                 .build();
     }
@@ -58,11 +63,16 @@ public class MetaTileEntityPrimitveAlloySmelter extends RecipeMapMultiblockContr
 
     @Override
     public MetaTileEntity createMetaTileEntity(IGregTechTileEntity iGregTechTileEntity) {
-        return new MetaTileEntityPrimitveAlloySmelter(metaTileEntityId);
+        return new MetaTileEntitySteamAlloySmelter(metaTileEntityId);
     }
 
     @Override
     protected ModularUI createUI(EntityPlayer entityPlayer) {
         return null;
+    }
+
+    @Override
+    protected void formStructure(PatternMatchContext context) {
+        super.formStructure(context);
     }
 }
