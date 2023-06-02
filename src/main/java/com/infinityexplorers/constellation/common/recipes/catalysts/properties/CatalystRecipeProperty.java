@@ -25,8 +25,8 @@ public class CatalystRecipeProperty extends RecipeProperty<CatalystPropertyValue
         CatalystPropertyValue propertyValue = castValue(o);
         int tier = propertyValue.getTier();
 
-        String localisedGroupName = I18n.format("constellation.catalyst_group." + propertyValue.getCatalystGroup().getName() + ".name");
+        String localisedGroupName = I18n.format("gregtech.catalyst_group." + propertyValue.getCatalystGroup().getName() + ".name");
 
-        minecraft.fontRenderer.drawString(I18n.format("constellation.recipe.catalyst", GTValues.VN[tier], localisedGroupName), x, y, color);
+        minecraft.fontRenderer.drawString(I18n.format("gregtech.recipe.catalyst", GTValues.VN[tier], localisedGroupName), x, y, color);
     }
 }

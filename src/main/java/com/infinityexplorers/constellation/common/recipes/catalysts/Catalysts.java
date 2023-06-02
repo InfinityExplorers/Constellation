@@ -18,7 +18,7 @@ public class Catalysts {
     }
 
     public Catalyst get(@Nonnull ItemStack itemStack) {
-        this.map.get(itemStack);
+       return this.map.get(itemStack);
     }
 
     public Stream<Map.Entry<ItemStack, Catalyst>> streamEntries() {

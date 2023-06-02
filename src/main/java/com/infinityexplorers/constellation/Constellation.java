@@ -1,6 +1,7 @@
 package com.infinityexplorers.constellation;
 
 import com.infinityexplorers.constellation.common.CommonProxy;
+import com.infinityexplorers.constellation.common.items.OrionMetaItems;
 import com.infinityexplorers.constellation.common.metatileentities.OrionMetaTileEntities;
 import gregtech.api.GregTechAPI;
 import net.minecraftforge.fml.common.Mod;
@@ -19,6 +20,8 @@ public class Constellation {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preLoad();
+
+        OrionMetaItems.initMetaItems();
 
         OrionMetaTileEntities.init();
     }

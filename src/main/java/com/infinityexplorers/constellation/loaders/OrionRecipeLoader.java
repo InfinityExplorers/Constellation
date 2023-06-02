@@ -1,6 +1,8 @@
 package com.infinityexplorers.constellation.loaders;
 
 import com.infinityexplorers.constellation.common.recipes.OrionRecipeMaps;
+import com.infinityexplorers.constellation.common.recipes.catalysts.CatalystGroup;
+import com.infinityexplorers.constellation.common.recipes.catalysts.CatalystGroups;
 import gregtech.api.unification.material.Materials;
 
 import static gregtech.api.recipes.RecipeMaps.*;
@@ -28,6 +30,8 @@ public class OrionRecipeLoader {
                 .input(dust, Copper, 3)
                 .output(ingot, Bronze, 4)
                 .buildAndRegister();
+
+
 
     }
 }
