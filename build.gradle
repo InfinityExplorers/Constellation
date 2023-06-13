@@ -110,6 +110,8 @@ dependencies {
 
     //
 
+    compileOnlyApi rfg.deobf('curse.maven:groovyscript-687577:4487379')
+
 
 
 

@@ -4,15 +4,19 @@ package com.infinityexplorers.constellation.common.recipes.catalysts;
 import net.minecraft.item.ItemStack;
 
 import javax.annotation.Nonnull;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class CatalystGroup {
+    private static final List<CatalystGroup> catalystGroups = new ArrayList<>();
 
     public Catalysts catalystList = new Catalysts();
     public final String name;
 
     public CatalystGroup(@Nonnull String name) {
         this.name = name;
+        catalystGroups.add(this);
     }
 
     public void add(@Nonnull ItemStack itemStack, Catalyst catalyst) {
@@ -41,5 +45,9 @@ public class CatalystGroup {
     @Override
     public int hashCode() {
         return Objects.hash(catalystList, name);
+    }
+
+    public static List<CatalystGroup> getCatalystGroups() {
+        return catalystGroups;
     }
 }

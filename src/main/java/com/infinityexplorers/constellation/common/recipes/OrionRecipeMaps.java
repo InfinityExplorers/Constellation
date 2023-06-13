@@ -1,10 +1,14 @@
 package com.infinityexplorers.constellation.common.recipes;
 
+import com.infinityexplorers.constellation.common.recipes.catalysts.CatalystGroups;
 import com.infinityexplorers.constellation.common.recipes.catalysts.recipe.CatalystRecipeBuilder;
 import gregtech.api.recipes.RecipeMap;
 import gregtech.api.recipes.RecipeMaps;
 import gregtech.api.recipes.builders.PrimitiveRecipeBuilder;
 import gregtech.api.recipes.builders.SimpleRecipeBuilder;
+
+import static gregtech.api.unification.material.Materials.*;
+import static gregtech.api.unification.ore.OrePrefix.*;
 
 public class OrionRecipeMaps {
 
