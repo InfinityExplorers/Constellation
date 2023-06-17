@@ -27,7 +27,7 @@ public class OrionMetaItems {
     }
 
     public static void initSubItems() {
-
+        CatalystItems.initCatalysts();
 
 
     }

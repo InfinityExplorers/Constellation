@@ -1,5 +1,6 @@
 package com.infinityexplorers.constellation.common.metatileentities;
 
+import com.infinityexplorers.constellation.common.recipes.logic.CatalystRecipeLogic;
 import com.infinityexplorers.constellation.common.recipes.logic.ContinuousRecipeLogic;
 import gregtech.api.capability.impl.RecipeLogicEnergy;
 import gregtech.api.metatileentity.MetaTileEntity;
@@ -23,6 +24,6 @@ public class ContinousMetaTileEntity extends SimpleMachineMetaTileEntity {
 
     @Override
     protected RecipeLogicEnergy createWorkable(RecipeMap<?> recipeMap) {
-        return new ContinuousRecipeLogic(this, recipeMap, () -> this.energyContainer);
+        return new CatalystRecipeLogic(this, recipeMap, () -> this.energyContainer);
     }
 }

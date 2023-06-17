@@ -31,7 +31,13 @@ public class OrionRecipeLoader {
                 .output(ingot, Bronze, 4)
                 .buildAndRegister();
 
-
+        OrionRecipeMaps.TRICKLE_BED_REACTOR.recipeBuilder()
+                .EUt(32)
+                .duration(15)
+                .catalyst(CatalystGroups.POLYMERIZATION_CATALYST_GROUP, 1, 1)
+                .fluidInputs(Ethylene.getFluid(2000))
+                .output(plate, Polyethylene, 5)
+                .buildAndRegister();
 
     }
 }

@@ -17,13 +17,13 @@ public class CatalystRecipeBuilder extends RecipeBuilder<CatalystRecipeBuilder> 
     public CatalystRecipeBuilder() {
     }
 
-    @SuppressWarnings("unused")
-    public CatalystRecipeBuilder(Recipe recipe, RecipeMap<CatalystRecipeBuilder> recipeMap) {
-        super(recipe, recipeMap);
-    }
-
     public CatalystRecipeBuilder(RecipeBuilder<CatalystRecipeBuilder> recipeBuilder) {
         super(recipeBuilder);
+    }
+
+    @Override
+    public CatalystRecipeBuilder copy() {
+        return new CatalystRecipeBuilder(this);
     }
 
     public CatalystRecipeBuilder catalyst(CatalystGroup catalystGroup, int tier, int amount) {
@@ -38,6 +38,8 @@ public class CatalystRecipeBuilder extends RecipeBuilder<CatalystRecipeBuilder> 
                     return is;
                 }).toArray(ItemStack[]::new);
 
-        return this.notConsumable(GTRecipeItemInput.getOrCreate(inputStacks));
+        this.notConsumable(GTRecipeItemInput.getOrCreate(inputStacks));
+
+        return this;
     }
 }

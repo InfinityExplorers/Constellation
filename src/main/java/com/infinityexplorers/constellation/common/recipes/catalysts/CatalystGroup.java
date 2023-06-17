@@ -20,7 +20,10 @@ public class CatalystGroup {
     }
 
     public void add(@Nonnull ItemStack itemStack, Catalyst catalyst) {
-        if (itemStack == ItemStack.EMPTY) return;
+        if (itemStack == ItemStack.EMPTY) {
+            System.out.println("lol get returned");
+            return;
+        }
         this.catalystList.put(itemStack, catalyst);
     }
 
