@@ -38,6 +38,10 @@ public class CatalystRecipeBuilder extends RecipeBuilder<CatalystRecipeBuilder> 
                     return is;
                 }).toArray(ItemStack[]::new);
 
+        if(inputStacks.length == 0) {
+            System.out.printf("not gud, not at all");
+            return this;
+        }
         this.notConsumable(GTRecipeItemInput.getOrCreate(inputStacks));
 
         return this;

@@ -39,5 +39,13 @@ public class OrionRecipeLoader {
                 .output(plate, Polyethylene, 5)
                 .buildAndRegister();
 
+        OrionRecipeMaps.CONTINUOUS_STIRRED_TANK_REACTOR.recipeBuilder()
+                .EUt(32)
+                .duration(100)
+                .catalyst(CatalystGroups.POLYMERIZATION_CATALYST_GROUP, 1, 1)
+                .fluidInputs(Ethylene.getFluid(2000))
+                .fluidOutputs(Polyethylene.getFluid(144))
+                .buildAndRegister();
+
     }
 }

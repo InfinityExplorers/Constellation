@@ -1,0 +1,19 @@
+# Blocks
+
+
+
+
+# CSTR
+constellation.machine.continuous_stirred_tank_reactor.lv.name="Basic Continuous Stirred Tank Reactor"
+constellation.machine.continuous_stirred_tank_reactor.mv.name="Advanced Continuous Stirred Tank Reactor"
+constellation.machine.continuous_stirred_tank_reactor.hv.name="Advanced Continuous Stirred Tank Reactor II"
+constellation.machine.continuous_stirred_tank_reactor.ev.name="Advanced Continuous Stirred Tank Reactor III"
+constellation.machine.continuous_stirred_tank_reactor.iv.name="Elite Continuous Stirred Tank Reactor"
+constellation.machine.continuous_stirred_tank_reactor.luv.name="Elite Continuous Stirred Tank Reactor II"
+constellation.machine.continuous_stirred_tank_reactor.zpm.name="Elite Continuous Stirred Tank Reactor III"
+constellation.machine.continuous_stirred_tank_reactor.uv.name="Ultimate Continuous Stirred Tank Reactor"
+constellation.machine.continuous_stirred_tank_reactor.uhv.name="Epic Continuous Stirred Tank Reactor"
+constellation.machine.continuous_stirred_tank_reactor.uev.name="Epic Continuous Stirred Tank Reactor II"
+constellation.machine.continuous_stirred_tank_reactor.uiv.name="Epic Continuous Stirred Tank Reactor III"
+constellation.machine.continuous_stirred_tank_reactor.uxv.name="Epic Continuous Stirred Tank Reactor IV"
+constellation.machine.continuous_stirred_tank_reactor.opv.name="Legendary Continuous Stirred Tank Reactor"
