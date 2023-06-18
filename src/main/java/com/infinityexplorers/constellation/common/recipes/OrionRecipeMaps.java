@@ -18,9 +18,12 @@ public class OrionRecipeMaps {
 
 
     public static final RecipeMap<CatalystRecipeBuilder> TRICKLE_BED_REACTOR = new RecipeMap<>("trickle_bed_reactor", 3, 2, 2, 1, new CatalystRecipeBuilder(), false)
-            .setSlotOverlay(false, false, true, OrionTextures.CATALYST_BED_OVERLAY)
+            .setSlotOverlay(false, false, false, OrionTextures.CATALYST_BED_OVERLAY)
             .setSound(GTSoundEvents.CHEMICAL_REACTOR);
 
+    public static final RecipeMap<CatalystRecipeBuilder> CONTINUOUS_STIRRED_TANK_REACTOR = new RecipeMap<>("continuous_stirred_tank_reactor", 2, 2, 3, 3, new CatalystRecipeBuilder(), false)
+            .setSlotOverlay(false, false, false, OrionTextures.CATALYST_BED_OVERLAY)
+            .setSound(GTSoundEvents.MIXER);
 
 
     public static void init() {

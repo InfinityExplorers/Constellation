@@ -27,7 +27,7 @@ public class OrionMetaTileEntities {
         TRICKLE_BED_REACTOR = new ContinousMetaTileEntity[GTValues.OpV];
 
 
-        //registerContinuousMTE(CONTINUOUS_STIRRED_TANK_REACTOR, 12, 12589, "continuous_stirred_tank_reactor", );
+        registerContinuousMTE(CONTINUOUS_STIRRED_TANK_REACTOR, 12, 12589, "continuous_stirred_tank_reactor", OrionRecipeMaps.CONTINUOUS_STIRRED_TANK_REACTOR, OrionTextures.CONTINUOUS_STIRRED_TANK_REACTOR, true, GTUtility.defaultTankSizeFunction);
         registerContinuousMTE(TRICKLE_BED_REACTOR, 12, 14567, "trickle_bed_reactor", OrionRecipeMaps.TRICKLE_BED_REACTOR, OrionTextures.TRICKLE_BED_REACTOR_OVERLAY, true, GTUtility.defaultTankSizeFunction);
 
 
