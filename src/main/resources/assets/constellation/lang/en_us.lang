@@ -1,0 +1,58 @@
+# Blocks
+
+
+# Items - Catalyst Beds
+
+metaitem.lv_catalyst_bed_polymerization.name=LV Ziegler-Natta Catalyst Bed
+metaitem.mv_catalyst_bed_polymerization.name=MV Ziegler-Natta Catalyst Bed
+metaitem.hv_catalyst_bed_polymerization.name=HV Ziegler-Natta Catalyst Bed
+metaitem.ev_catalyst_bed_polymerization.name=EV Ziegler-Natta Catalyst Bed
+metaitem.iv_catalyst_bed_polymerization.name=IV Ziegler-Natta Catalyst Bed
+metaitem.luv_catalyst_bed_polymerization.name=LuV Ziegler-Natta Catalyst Bed
+metaitem.zpm_catalyst_bed_polymerization.name=ZPM Ziegler-Natta Catalyst Bed
+metaitem.uv_catalyst_bed_polymerization.name=UV Ziegler-Natta Catalyst Bed
+metaitem.uhv_catalyst_bed_polymerization.name=UHV Ziegler-Natta Catalyst Bed
+metaitem.uev_catalyst_bed_polymerization.name=UEV Ziegler-Natta Catalyst Bed
+metaitem.uiv_catalyst_bed_polymerization.name=UIV Ziegler-Natta Catalyst Bed
+metaitem.uxv_catalyst_bed_polymerization.name=UXV Ziegler-Natta Catalyst Bed
+metaitem.opv_catalyst_bed_polymerization.name=OpV Ziegler-Natta Catalyst Bed
+
+metaitem.lv_catalyst_bed_oxidation.name=LV Oxidation Catalyst Bed
+metaitem.mv_catalyst_bed_oxidation.name=MV Oxidation Catalyst Bed
+metaitem.hv_catalyst_bed_oxidation.name=HV Oxidation Catalyst Bed
+metaitem.ev_catalyst_bed_oxidation.name=EV Oxidation Catalyst Bed
+metaitem.iv_catalyst_bed_oxidation.name=IV Oxidation Catalyst Bed
+metaitem.luv_catalyst_bed_oxidation.name=LuV Oxidation Catalyst Bed
+metaitem.zpm_catalyst_bed_oxidation.name=ZPM Oxidation Catalyst Bed
+metaitem.uv_catalyst_bed_oxidation.name=UV Oxidation Catalyst Bed
+metaitem.uhv_catalyst_bed_oxidation.name=UHV Oxidation Catalyst Bed
+metaitem.uev_catalyst_bed_oxidation.name=UEV Oxidation Catalyst Bed
+metaitem.uiv_catalyst_bed_oxidation.name=UIV Oxidation Catalyst Bed
+metaitem.uxv_catalyst_bed_oxidation.name=UXV Oxidation Catalyst Bed
+metaitem.opv_catalyst_bed_oxidation.name=OpV Oxidation Catalyst Bed
+
+metaitem.cracking_catalyst_bed.name=Cracking Catalyst Bed
+
+# CSTR
+constellation.machine.continuous_stirred_tank_reactor.lv.name=Basic CSTR
+constellation.machine.continuous_stirred_tank_reactor.mv.name=Advanced CSTR
+constellation.machine.continuous_stirred_tank_reactor.hv.name=Advanced CSTR II
+constellation.machine.continuous_stirred_tank_reactor.ev.name=Advanced CSTR III
+constellation.machine.continuous_stirred_tank_reactor.iv.name=Elite CSTR
+constellation.machine.continuous_stirred_tank_reactor.luv.name=Elite CSTR II
+constellation.machine.continuous_stirred_tank_reactor.zpm.name=Elite CSTR III
+constellation.machine.continuous_stirred_tank_reactor.uv.name=Ultimate CSTR
+constellation.machine.continuous_stirred_tank_reactor.uhv.name=Epic CSTR
+constellation.machine.continuous_stirred_tank_reactor.uev.name=Epic CSTR II
+constellation.machine.continuous_stirred_tank_reactor.uiv.name=Epic CSTR III
+constellation.machine.continuous_stirred_tank_reactor.uxv.name=Epic CSTR IV
+constellation.machine.continuous_stirred_tank_reactor.opv.name=Legendary CSTR
+
+constellation.machine.trickle_bed_reactor.lv.name=Basic Trickle Bed Reactor
+constellation.machine.trickle_bed_reactor.mv.name=Advanced Trickle Bed Reactor
+constellation.machine.trickle_bed_reactor.hv.name=Advanced Trickle Bed Reactor II
+constellation.machine.trickle_bed_reactor.ev.name=Advanced Trickle Bed Reactor III
+constellation.machine.trickle_bed_reactor.iv.name=Elite Trickle Bed Reactor
+constellation.machine.trickle_bed_reactor.luv.name=Elite Trickle Bed Reactor II
+constellation.machine.trickle_bed_reactor.zpm.name=Elite Trickle Bed Reactor III
+constellation.machine.trickle_bed_reactor.uv.name=Ultimate Trickle Bed Reactor
