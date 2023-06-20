@@ -15,11 +15,13 @@ public class CatalystItems {
 
 
     public static MetaOreDictItem.OreDictValueItem[] POLYMERIZATION_CATALYST_BED = new MetaOreDictItem.OreDictValueItem[14];
+    public static MetaOreDictItem.OreDictValueItem[] OXIDATION_CATALYST_BED = new MetaOreDictItem.OreDictValueItem[14];
 
     public static MetaOreDictItem.OreDictValueItem CRACKING_CATALYST_BED;
 
     public static void init() {
         initTieredCatalystMetaItems(POLYMERIZATION_CATALYST_BED, 14500, 0x1a75ff, OrionOrePrefix.catalystBedPolymerization);
+        initTieredCatalystMetaItems(OXIDATION_CATALYST_BED, 14518, 0x12daf3, OrionOrePrefix.catalystBedOxidation);
 
         CRACKING_CATALYST_BED = OrionMetaItems.oreDictItem.addOreDictItem(28, "standard", 0x728a7a, MaterialIconSet.DULL, OrionOrePrefix.catalystBedCracking);
 
@@ -29,6 +31,7 @@ public class CatalystItems {
 
     public static void initCatalysts() {
         addTieredCatalystGroups(POLYMERIZATION_CATALYST_BED, CatalystGroups.POLYMERIZATION_CATALYST_GROUP);
+        addTieredCatalystGroups(OXIDATION_CATALYST_BED, CatalystGroups.OXIDATION_CATALYST_GROUP);
 
         CatalystGroups.CRACKING_CATALYST_GROUP.add(CRACKING_CATALYST_BED.getItemStack(), new Catalyst(
                 -1,

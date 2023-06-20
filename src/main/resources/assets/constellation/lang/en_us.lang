@@ -1,6 +1,36 @@
 # Blocks
 
 
+# Items - Catalyst Beds
+
+metaitem.lv_catalyst_bed_polymerization.name=LV Ziegler-Natta Catalyst Bed
+metaitem.mv_catalyst_bed_polymerization.name=MV Ziegler-Natta Catalyst Bed
+metaitem.hv_catalyst_bed_polymerization.name=HV Ziegler-Natta Catalyst Bed
+metaitem.ev_catalyst_bed_polymerization.name=EV Ziegler-Natta Catalyst Bed
+metaitem.iv_catalyst_bed_polymerization.name=IV Ziegler-Natta Catalyst Bed
+metaitem.luv_catalyst_bed_polymerization.name=LuV Ziegler-Natta Catalyst Bed
+metaitem.zpm_catalyst_bed_polymerization.name=ZPM Ziegler-Natta Catalyst Bed
+metaitem.uv_catalyst_bed_polymerization.name=UV Ziegler-Natta Catalyst Bed
+metaitem.uhv_catalyst_bed_polymerization.name=UHV Ziegler-Natta Catalyst Bed
+metaitem.uev_catalyst_bed_polymerization.name=UEV Ziegler-Natta Catalyst Bed
+metaitem.uiv_catalyst_bed_polymerization.name=UIV Ziegler-Natta Catalyst Bed
+metaitem.uxv_catalyst_bed_polymerization.name=UXV Ziegler-Natta Catalyst Bed
+metaitem.opv_catalyst_bed_polymerization.name=OpV Ziegler-Natta Catalyst Bed
+
+metaitem.lv_catalyst_bed_oxidation.name=LV Oxidation Catalyst Bed
+metaitem.mv_catalyst_bed_oxidation.name=MV Oxidation Catalyst Bed
+metaitem.hv_catalyst_bed_oxidation.name=HV Oxidation Catalyst Bed
+metaitem.ev_catalyst_bed_oxidation.name=EV Oxidation Catalyst Bed
+metaitem.iv_catalyst_bed_oxidation.name=IV Oxidation Catalyst Bed
+metaitem.luv_catalyst_bed_oxidation.name=LuV Oxidation Catalyst Bed
+metaitem.zpm_catalyst_bed_oxidation.name=ZPM Oxidation Catalyst Bed
+metaitem.uv_catalyst_bed_oxidation.name=UV Oxidation Catalyst Bed
+metaitem.uhv_catalyst_bed_oxidation.name=UHV Oxidation Catalyst Bed
+metaitem.uev_catalyst_bed_oxidation.name=UEV Oxidation Catalyst Bed
+metaitem.uiv_catalyst_bed_oxidation.name=UIV Oxidation Catalyst Bed
+metaitem.uxv_catalyst_bed_oxidation.name=UXV Oxidation Catalyst Bed
+metaitem.opv_catalyst_bed_oxidation.name=OpV Oxidation Catalyst Bed
+
 
 
 # CSTR

@@ -7,7 +7,9 @@ public class CatalystGroups {
 
     public static List<CatalystGroup> catalystGroups = new ArrayList<>();
 
-    public static final CatalystGroup POLYMERIZATION_CATALYST_GROUP = new CatalystGroup("polymerization_catalyst_beds");
+    public static final CatalystGroup POLYMERIZATION_CATALYST_GROUP = new CatalystGroup("polymerization_catalyst_bed");
+    public static final CatalystGroup OXIDATION_CATALYST_GROUP = new CatalystGroup("oxidation_catalyst_bed");
+
     public static final CatalystGroup CRACKING_CATALYST_GROUP = new CatalystGroup("cracking_catalyst_bed");
 
 
