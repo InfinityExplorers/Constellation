@@ -31,7 +31,7 @@ metaitem.uiv_catalyst_bed_oxidation.name=UIV Oxidation Catalyst Bed
 metaitem.uxv_catalyst_bed_oxidation.name=UXV Oxidation Catalyst Bed
 metaitem.opv_catalyst_bed_oxidation.name=OpV Oxidation Catalyst Bed
 
-
+metaitem.cracking_catalyst_bed.name=Cracking Catalyst Bed
 
 # CSTR
 constellation.machine.continuous_stirred_tank_reactor.lv.name=Basic CSTR
